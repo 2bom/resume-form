@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>OTAKU RESUME</title>
+    <link rel="stylesheet" href="resume-css.css">
+    <script src="flexibility.js"></script>
+</head>
+<body onload="current()">
+<!-- 오프라인 이력서에 장난스럽지만 정성 들여 작성했다는 느낌이 날 수 있도록,
+보통 종이에 인쇄된 느낌이 나게,
+입력하시는 분들의 성향상, 이미지를 중요시,
+세로로 스크롤 되는 형태-->
+    <div class="container">
+        <div class="main-profile">
+        <h1>후조시이력서</h1>
+            <div class="profile">
+               <p>몇년 몇월 몇일</p>
+               <div class="basic-info-box border-outer">
+                   <div class="basic-info border-outer-right">
+                       <div class="wrapper border-inner-bottom-2" id="nickname">
+                           <div class="label border-inner-right-2" style="color:#4B4B4B; font-weight:bold;">닉네임</div>
+                           <div class="contents innerTexts">이거슨 닉네임</div>
+                       </div>
+                       <div class="wrapper border-inner-bottom-2" id="level">
+                           <div class="label border-inner-right-2" style="color:#4B4B4B; font-weight:bold;">레벨</div>
+                           <div class="contents innerTexts">이거슨 레벨!</div>
+                       </div>
+                       <div class="additional-info wrapper">
+                           <div class="wrapper border-inner-right-2" id="birthday"><p class="innerTexts">년   월   일</p></div>
+                           <div class="innerTexts" id="gender">남자 / 여자</div>
+                       </div>
+                   </div>
+                   <div id="image"></div>
+               </div>
+               <div class="additional-info-box border-outer">
+                   <div id="address">
+                       <div class="label border-inner-bottom-2" style="color:#4B4B4B; font-weight:bold;">주소</div>
+                       <div class="wrapper contents border-outer-bottom"><p class="innerTexts" >여기 주소들어감</p></div>
+                   </div>
+                   <div class="online-address">
+                       <div class="label border-inner-bottom-2" style="color:#4B4B4B; font-weight:bold;">연락처</div>
+                       <div class="contents">
+                           <div class="wrapper border-inner-bottom-1">
+                               <div class="border-inner-right-1 wrapper" id="email"><p class="innerTexts" >이메일</p></div>
+                               <div class="wrapper" id="twitter"><p class="innerTexts">트윗</p></div>
+                           </div>
+                           <div class="wrapper">
+                               <div class="border-inner-right-1 wrapper" id="line"><p class="innerTexts">라인</p></div>
+                               <div class="border-inner-right-1 wrapper" id="pixiv"><p class="innerTexts">픽시브</p></div>
+                               <div class="wrapper" id="deviant"><p class="innerTexts">데비안</p></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+
+            <button> + 더보기</button>
+            <div class="timeline border-outer" style="clear: both;">
+                <div class="contents wrapper border-inner-bottom-2">
+                    <div class="wrapper border-inner-right-2 timeline-years"><p class="innerTexts" style="color:#4B4B4B; font-weight:bold;">년도</p></div>
+                    <div class="wrapper border-inner-right-2 timeline-tag timeline-tag-ganre-label"><p class="innerTexts" style="color:#4B4B4B; font-weight:bold; border-left:1px solid white">태그</p></div>
+                    <div class="wrapper timeline-content"><p class="innerTexts" style="color:#4B4B4B; font-weight:bold;">내용 설명</p></div>
+                </div>
+                <div class="contents wrapper border-inner-bottom-1">
+                   <div class="wrapper border-inner-right-2 timeline-years"><p class="innerTexts"></p></div>
+                   <div class="wrapper border-inner-right-1 timeline-tag timeline-tag-ganre"><p class="innerTexts"></p></div>
+                   <div class="wrapper border-inner-right-2 timeline-tag timeline-tag-name"><p class="innerTexts"></p></div>
+                   <div class="wrapper timeline-content"><p class="innerTexts"></p></div>
+                </div>
+                <div class="contents wrapper border-inner-bottom">
+                    <div class="wrapper border-inner-right-2 timeline-years"><p class="innerTexts"></p></div>
+                    <div class="wrapper border-inner-right-1 timeline-tag timeline-tag-ganre"><p class="innerTexts">만화</p></div>
+                    <div class="wrapper border-inner-right-2 timeline-tag timeline-tag-name"><p class="innerTexts">나루토</p></div>
+                    <div class="wrapper timeline-content"><p class="innerTexts">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p></div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <p class="entry">후조시엔트리시트</p>
+            <div class="entry border-outer">
+                <div class="border-inner-bottom-2 contents">
+                    <p class="text-contents-label">- 推しカプに必ずさせてしまうシチュ・性癖</p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+                <div class="border-inner-bottom-2 contents">
+                    <p class="text-contents-label">- ハマる攻めの傾向</p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+                <div class="contents">
+                    <p class="text-contents-label">- ハマる受けの傾向</p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+            </div>
+            <p class="concern">LGBT와 관계없이... 영업해보세요</p>
+            <div class="concern border-outer">
+                <div class="border-inner-bottom-2 contents">
+                    <p class="text-contents-label">- 漫画</p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+                <div class="border-inner-bottom-2 contents">
+                    <p class="text-contents-label">- アニメ</p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+                <div class="contents">
+                    <p class="text-contents-label">- ゲーム</p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+            </div>
+            <div class="border-outer contents" id="appendix">
+                <p class="text-contents-label">- 最後に誇りたい腐話</p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+        <div class="share">
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&mobile_iframe=true&width=116&height=20&appId" width="116" height="20" style="border:none;overflow:hidden;margin:0;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <a href="https://twitter.com/share" class="twitter-share-button" width="60" height="20"  style="border:none;overflow:hidden;margin:0;" scrolling="no" frameborder="0" allowTransparency="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+    </div>
+
+<script>
+    flexibility(document.documentElement);
+    var timeline = document.querySelectorAll('.timeline > .contents');
+    var button = document.getElementsByTagName("button")[0];
+
+    function current(){
+        if (timeline.length > 2) {
+            for (var i = 2; i < timeline.length; i++){
+                timeline[i].style.display = 'none';
+            }
+        }
+        button.innerHTML = " + 더보기";
+        button.setAttribute("onclick", "seeMore()");
+    }
+    function seeMore() {
+        for (var i = 2; i < timeline.length; i++){
+            timeline[i].style.display = '';
+        }
+        button.innerHTML = " - 접기";
+        button.setAttribute("onclick", "current()");
+    }
+
+    "current()"
+    console.log(timeline);
+    console.log(timeline[2]);
+</script>
+</body>
+</html>
