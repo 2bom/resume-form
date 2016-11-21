@@ -1,0 +1,310 @@
+/*오프라인 이력서에 장난스럽지만 정성 들여 작성했다는 느낌이 날 수 있도록,*/
+/*보통 종이에 인쇄된 느낌이 나게,*/
+/*입력하시는 분들의 성향상, 이미지를 중요시,*/
+/*세로로 스크롤 되는 형태*/
+
+/*COLOR SET*/
+/*darkgray : #4B4B4B*/
+/*middlegray: #898987*/
+/*lighetgray: #BDBCB9*/
+/*almostwhite:  #F1F0EC*/
+
+body {
+    padding: 10px;
+    color: #4B4B4B;
+    vertical-align: middle;
+}
+p {
+    margin: 0px;
+}
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    min-width: 800px;
+    max-width: 800px;
+    padding: 20px;
+    margin:auto;
+    border-top: 2px solid #F1F0EC;
+    border-left: 2px solid #F1F0EC;
+    border-right: 4px solid #F1F0EC;
+    border-bottom: 8px solid #F1F0EC;
+}
+
+/*borders*/
+.border-outer {
+    border: 3px solid black;
+}
+.border-outer-right {
+    border-right: 3px solid black;
+}
+.border-outer-bottom {
+    border-bottom: 3px solid black;
+}
+.border-inner {
+    border: 3px solid #4B4B4B;
+}
+.border-inner-right-1 {
+    border-right: 1px solid #4B4B4B;
+}
+.border-inner-right-2 {
+    border-right: 2px solid #4B4B4B;
+}
+.border-inner-bottom-1 {
+    border-bottom: 1px solid #4B4B4B;
+}
+.border-inner-bottom-2 {
+    border-bottom: 2px solid #4B4B4B;
+}
+.additional-info-box {
+    margin-top: -3px;
+}
+
+
+
+/*intervals*/
+.main-profile {
+    margin-bottom: 30px;
+}
+.profile {
+    margin-bottom: 20px;
+}
+.entry {
+    margin-bottom: 25px;
+}
+.concern {
+    margin-bottom: 25px;
+}
+
+
+/*text styles*/
+.innerTexts {
+    padding: 5px;
+}
+.label {
+    font-weight: bold;
+}
+
+
+/*head*/
+h1 {
+    color: black;
+}
+
+.innerText-box {
+    display: table;
+}
+.innerText-middle {
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.innerText-label {
+    color:#4B4B4B;
+    font-weight:bold;
+}
+
+
+/*profile*/
+.profile-basic-wrapper {
+    width: 100%;
+    height: 170px;
+    float: left;
+}
+.profile>p {
+    text-align: right;
+}
+.profile-info {
+    float: right;
+    width: 80%;
+    height: 100%;
+}
+#image {
+    float: right;
+    width:20%;
+    height: 100%;
+}
+#nickname {
+    height: 30%;
+}
+#nickname .label{
+    float: left;
+    height: 100%;
+    width: 22%;
+}
+#nickname .contents{
+    float: left;
+    height: 100%;
+    min-width: 78%;
+    max-width: 78%;
+}
+#level{
+    height: 40%;
+}
+#level .label{
+    float: left;
+    height:102%;
+    width: 22%;
+}
+#level .contents{
+    float: left;
+    height: 102%;
+    width: 78%;
+}
+#basic-info-etc {
+    height: 30%;
+}
+#birth {
+    float: left;
+    height: 100%;
+    width: 85%;
+    text-align: center;
+}
+#gender {
+    float: left;
+    height: 100%;
+    width: 15%;
+    text-align: center;
+}
+
+
+
+.profile-additional-wrapper {
+    width: 100%;
+    min-height: 200px;
+    margin-top: -3px;
+    margin-bottom: 15px;
+    float: left;
+}
+#address {
+    width: 100%;
+    min-height: 85px;
+    text-align: center;
+}
+#address>.label {
+    width: 100%;
+    height: 40px;
+}
+#address>.contents {
+    width: 100%;
+    min-height: 45px;
+}
+#online-address {
+    height: 120px;
+}
+
+
+#online-address {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
+#online-address>.label {
+    width: 100%;
+    height: 40px;
+}
+#online-address>.contents {
+    width: 100%;
+    height: 90px;
+}
+#online-address .contact {
+    width: 100%;
+    height: 45px;
+}
+#online-address #email {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#online-address #twitter {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#online-address #line {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+#online-address #pixiv {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+#online-address #deviant {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+
+
+
+/*timeline*/
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:5px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:5px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:middle}
+.tg .tg-yw4l{vertical-align:middle}
+.table-labels {
+    width: 18%;
+       }
+.tg-tags {
+    width: 30%;
+}
+.tg-content {
+    width: 52%;
+}
+.tg .content {
+    height: 40px;
+}
+
+button {
+    float: right;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+
+/*board*/
+.board {
+    margin-top: 20px;
+}
+.board .contents {
+    min-height: 80px;
+    padding: 10px;
+}
+#appendix {
+    min-height: 180px;
+    padding: 10px;
+}
+
+p.entry {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+p.concern {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text-contents-label {
+    width: 50%;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    color:  black;
+    font-weight: bold;
+}
+
+
+.share {
+    margin: 20px auto 15px auto;
+    text-align: center;
+}
+iframe {
+    margin: 0;
+}
